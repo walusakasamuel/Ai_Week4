@@ -1,0 +1,8 @@
+def sort_list_of_dicts_ai(data, key):
+    """
+    Ai suggested function to sort a list of dictionaries by specific key
+    """
+    # Using sorted() with lambda function as key
+    return sorted(data, key=lambda x: x(key, 0))
+# The AI version includes .get() method with default value
+# which handles missing keys more gracefully
